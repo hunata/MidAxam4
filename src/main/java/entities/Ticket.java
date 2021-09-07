@@ -15,9 +15,6 @@ public class Ticket {
     }
 
     public Ticket() {
-        this.tenChuyen="A";
-        this.ngayBay = LocalDateTime.now();
-        this.giaVe= 0;
     }
 
     public Ticket(String tenChuyen, LocalDateTime ngayBay, int giave) {
@@ -25,6 +22,7 @@ public class Ticket {
         this.ngayBay = ngayBay;
         this.giaVe = giaVe;
     }
+
     public Ticket inputTicketInfo(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập vào tên chuyến: ");
